@@ -9,3 +9,4 @@
         <a href="{{ URL::to('/home') }}">Index Page</a>
     </body>
 </html>
+
