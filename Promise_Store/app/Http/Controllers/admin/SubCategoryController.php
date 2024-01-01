@@ -8,6 +8,8 @@ use App\Models\SubCategory; // Make sure to include the SubCategory model
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+use function PHPUnit\Framework\returnSelf;
+
 class SubCategoryController extends Controller
 {
     public function index(Request $request) {
@@ -120,4 +122,29 @@ class SubCategoryController extends Controller
             ]);
         }
     }
+
+    // app/Http/Controllers/admin/SubCategoryController.php
+
+public function destroy($id, Request $request) {
+    $subCategory = SubCategory::find($id);
+
+    if (!$subCategory) {
+        $request->session()->flash('erroe', 'Records Not Found');
+        return response([
+            'status' => false,
+            'notFound' => true
+        ]);
+    }
+
+
+    $subCategory->delete();
+
+    $request->session()->flash('success', 'SubCategory Deleted Successfully');
+
+    return response([
+        'status' => true,
+        'message' => 'SubCategory Deleted Successfully'
+    ]);
+}
+
 }

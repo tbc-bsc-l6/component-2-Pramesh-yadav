@@ -94,6 +94,11 @@
                     $("#slug").removeClass('is-invalid').siblings('p').removeClass('invalid-feedback').html("");
                     $("#category").removeClass('is-invalid').siblings('p').removeClass('invalid-feedback').html("");
                 } else {
+
+                    if (response ['notFound'] == true){
+                        window.Location.href="{{ route('sub-categories.index') }}"
+                        return false;
+                    }
                     var errors = response.errors;
                     if (errors.name) {
                         $("#name").addClass('is-invalid').siblings('p').addClass('invalid-feedback').html(errors.name);
