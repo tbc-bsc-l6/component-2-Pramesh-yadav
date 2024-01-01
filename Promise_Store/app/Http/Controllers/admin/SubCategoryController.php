@@ -96,7 +96,7 @@ class SubCategoryController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             //'slug' => 'required|unique:sub_categories',
-            'slug' => 'required|unique:categories,slug,'.$subCategory->id.',id',
+            'slug' => 'required|unique:sub_categories,slug,'.$subCategory->id.',id',
 
             'category' => 'required',
             'status' => 'required',
@@ -123,13 +123,11 @@ class SubCategoryController extends Controller
         }
     }
 
-    // app/Http/Controllers/admin/SubCategoryController.php
-
 public function destroy($id, Request $request) {
     $subCategory = SubCategory::find($id);
 
     if (!$subCategory) {
-        $request->session()->flash('erroe', 'Records Not Found');
+        $request->session()->flash('error', 'Records Not Found');
         return response([
             'status' => false,
             'notFound' => true
