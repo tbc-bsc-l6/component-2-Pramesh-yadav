@@ -7,6 +7,8 @@ use App\Http\Controllers\admin\SubCategoryController;
 use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\TempImagesController;
 use App\Http\Controllers\admin\BrandController;
+use App\Http\Controllers\admin\ProductController;
+use App\Http\Controllers\admin\ProductSubCategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -61,6 +63,11 @@ Route::group(['prefix' => 'admin'], function(){
         Route::get('/brands/{brand}/create', [BrandController::class, 'edit'])->name('brands.edit');
         Route::put('/brands/{brand}', [BrandController::class, 'update'])->name('brands.update');
 
+        //product routes
+        Route::get('/products', [ProductController::class,'index'])->name('products.index');
+        Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
+        Route::get('/product-subcategories', [ProductSubCategoryController::class, 'index'])->name('product-subcategories.index');
+        Route::post('/products', [ProductController::class, 'store'])->name('products.store');
 
 
 
