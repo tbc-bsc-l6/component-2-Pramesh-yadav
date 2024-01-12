@@ -16,7 +16,8 @@
     .th_deg
     {
         background-color: skyblue;
-        
+        padding: 10px;
+
     }
 
     .table_deg
@@ -64,6 +65,8 @@
                 <th>Payment Status</th>
                 <th>Delivery Status</th>
                 <th>Image</th>
+                <th>Delivered</th>
+
 
             </tr>
 
@@ -82,6 +85,17 @@
                 <td>
 
                     <img class="img_size" src="/product/{{$order->image}}">
+                </td>
+
+                <td>
+                    @if($order->delivery_status=='processing')
+                    <a href="{{url('delivered',$order->id)}}" onclick="return confirm(' Are You SUre That Product Is Delivered ')" class="btn btn-primary">Delivered</a>
+
+
+                    @else
+                    <p style="color: greenyellow;">Delivered</p>
+
+                    @endif
                 </td>
 
 
