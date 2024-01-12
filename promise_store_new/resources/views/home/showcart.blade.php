@@ -105,7 +105,7 @@
 
             <h1 style="font-size: 25px; padding-bottom: 15px">Proceed To Order</h1>
             <a href="{{url('cash_order') }}" class="btn btn-danger">Cash On Delivery</a>
-            <a href="" class="btn btn-danger">Payment Via Card</a>
+            <a href="{{url('stripe',$totalprice)}}" class="btn btn-danger">Payment Via Card</a>
 
 
         </div>
