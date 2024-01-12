@@ -59,6 +59,10 @@ Route::post('stripe/{totalprice}', [HomeController::class,'stripePost'])->name('
 route ::get('/order',[AdminController::class,'order']);
 route ::get('/delivered/{id}',[AdminController::class,'delivered']);
 
+//print pdf
+route ::get('/print_pdf/{id}',[AdminController::class,'print_pdf']);
+
+
 
 
 
