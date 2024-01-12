@@ -50,6 +50,14 @@
 
           <h1 class="title_deg">All Orders</h1>
 
+          <div style="padding-left: 400px; padding-bottom: 30px">
+            <form action="{{url('search') }}" method="get">
+                @csrf
+            <input type="text" style="color: black;" name="search" placeholder="Search Something You Want">
+            <input type="submit" value="search" class="btn btn-outline-primary">
+            </form>
+          </div>
+
           <table class="table_deg">
 
             <tr class="th_deg">
@@ -73,7 +81,7 @@
 
             </tr>
 
-            @foreach($order as $order) 
+            @forelse($order as $order) 
 
             <tr>
                 <td>{{$order->name}}</td>
@@ -112,8 +120,15 @@
 
 
             </tr>
+            @empty 
+            <tr>
+            <td colspan="16">
+                <p>No Data Found</p>
+            </td>
+            </tr>
+      
 
-            @endforeach
+            @endforelse
 
           </table>
 
