@@ -69,6 +69,11 @@ route ::post('/send_user_email/{id}',[AdminController::class,'send_user_email'])
 //search data in admin panel
 route ::get('/search',[AdminController::class,'searchdata']);
 
+//order in user homepage
+route ::get('/show_order',[HomeController::class,'show_order']); 
+route::get('/cancel_order/{id}', [HomeController::class, 'cancel_order']);  
+
+
 
 
 
