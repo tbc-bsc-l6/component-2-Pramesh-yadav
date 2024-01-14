@@ -78,6 +78,10 @@ route ::post('/add_comment',[HomeController::class,'add_comment']);
 route ::post('/add_reply',[HomeController::class,'add_reply']); 
 
 
+//search homepage
+
+route::get('/product_search',[HomeController::class,'product_search']); 
+
 
 
 
