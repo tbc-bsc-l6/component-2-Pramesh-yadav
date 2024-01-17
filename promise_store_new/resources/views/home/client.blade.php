@@ -18,14 +18,14 @@
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Ramesh
                            </h5>
                            <h6>
                               Customer
                            </h6>
                            <p>
-                              Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
-                           </p>
+                              Great Deal
+                        </p>
                         </div>
                      </div>
                   </div>
@@ -40,14 +40,15 @@
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Pramesh
                            </h5>
                            <h6>
                               Customer
                            </h6>
                            <p>
-                              Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
-                           </p>
+                              Very Good Service in The Town
+
+                        </p>
                         </div>
                      </div>
                   </div>
@@ -62,14 +63,15 @@
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Prabin
                            </h5>
                            <h6>
                               Customer
                            </h6>
                            <p>
-                              Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
-                           </p>
+                              Just Wow
+
+                        </p>
                         </div>
                      </div>
                   </div>

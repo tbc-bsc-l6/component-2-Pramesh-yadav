@@ -82,6 +82,13 @@ route ::post('/add_reply',[HomeController::class,'add_reply']);
 
 route::get('/product_search',[HomeController::class,'product_search']); 
 
+//product page in homepage
+route::get('/products',[HomeController::class,'product']); 
 
+
+route::get('/search_product',[HomeController::class,'search_product']); 
+
+
+Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us');
 
 
