@@ -54,7 +54,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Promise Store</a>
+        <a class="navbar-brand" href="{{url('about-us') }}">Promise Store</a>
     </nav>
 
     <div class="container mt-5">
